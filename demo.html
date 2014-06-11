@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">
+    <title>jQuery :: Konami Code</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery.konami.js" type="text/javascript"></script>
+
+    <script>
+    $(function(){
+        $(window).konami({
+            run: function(){
+                $('#secret').show();
+                alert('Good job ;)');
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+
+<code>up up down down left right left right b a</code>
+
+<div id="secret" style="display: none;">
+    Easter egg !
+</div>
+    
+</body>
+</html>
+
